@@ -6,6 +6,8 @@ plugins {
     id("com.google.dagger.hilt.android")
 }
 
+apply(from = "../projectDependencyGraph.gradle")
+
 android {
     namespace = "com.zenni.modularizationdemo"
     compileSdk = 34
