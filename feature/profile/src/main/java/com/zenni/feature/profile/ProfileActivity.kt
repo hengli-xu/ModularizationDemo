@@ -1,6 +1,8 @@
 package com.zenni.feature.profile
 
 import android.os.Bundle
+import android.view.View
+import android.view.View.OnClickListener
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.zenni.api_feature.HomepageService
@@ -18,6 +20,10 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
-        findViewById<TextView>(R.id.homepage_text).text = homepageService.getHomepageLabel()
+        findViewById<TextView>(R.id.btn_homepage).setOnClickListener(object : OnClickListener {
+            override fun onClick(v: View?) {
+                findViewById<TextView>(R.id.homepage_text).text = homepageService.getHomepageLabel()
+            }
+        })
     }
 }
