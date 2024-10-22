@@ -39,7 +39,11 @@ dependencies {
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.viewmodel.ktx)
+    implementation(libs.androidx.activity.ktx)
+    implementation(libs.androidx.fragment.ktx)
     implementation(libs.material)
+    implementation(project(":core:base"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -47,8 +51,10 @@ dependencies {
     implementation(libs.hilt)
     ksp(libs.hilt.compiler)
 
-    implementation(project(":api-feature"))
-    implementation(project(":datamodel"))
+    implementation(project(":core:api-feature"))
+    implementation(project(":core:datamodel"))
+    implementation(project(":core:data"))
+    implementation(project(":core:domain"))
+    implementation(project(":core:network"))
     implementation(project(":common:imageloader"))
-    implementation(project(":common:network"))
 }

@@ -32,4 +32,27 @@
 
     </Button>
 
+    <Button
+        android:id="@+id/btn_update_price_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Price Range"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/get_user_info"
+        />
+
+    <TextView
+        android:id="@+id/frame_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_update_price_range"
+        >
+
+    </TextView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

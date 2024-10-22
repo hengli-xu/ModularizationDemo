@@ -47,8 +47,8 @@ dependencies {
     implementation(libs.hilt)
     ksp(libs.hilt.compiler)
 
-    implementation(project(":api-feature"))
-    implementation(project(":datamodel"))
+    implementation(project(":core:api-feature"))
+    implementation(project(":core:datamodel"))
+    implementation(project(":core:network"))
     implementation(project(":common:imageloader"))
-    implementation(project(":common:network"))
 }

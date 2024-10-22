@@ -21,10 +21,15 @@ dependencyResolutionManagement {
 
 rootProject.name = "ModularizationDemo"
 include(":app")
+
+include(":common:imageloader")
+
+include(":core:api-feature")
+include(":core:datamodel")
+include(":core:data")
+include(":core:domain")
+include(":core:network")
+
 include(":feature:homepage")
 include(":feature:profile")
-
-include(":common:network")
-include(":common:imageloader")
-include(":api-feature")
-include(":datamodel")
+include(":core:base")
